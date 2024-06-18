@@ -1,1 +1,1 @@
-Yet another backdoor i made, cuz thats what  do.
+can be used to inject as shellcode 
